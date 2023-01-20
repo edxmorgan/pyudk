@@ -22,3 +22,11 @@ class Udk:
         Bplus = np.linalg.pinv(B.astype(np.float64))
         K = Msqrt @ Bplus  # weighted Moore-Penrose generalized inverse of the weighted constraint matrix A
         return K @ e
+
+    def non_ideal_Constraint_force(self,m,A,c):
+        B = A @ si.linalg.fractional_matrix_power(m, -1 / 2)
+        M_sqrt = si.linalg.fractional_matrix_power(m, 1 / 2)
+        M_negsqrt = si.linalg.fractional_matrix_power(m, -1 / 2)
+        BplusB = np.linalg.pinv(B.astype(np.float64)) @ B
+        I = np.identity(BplusB.shape[0])
+        return M_sqrt @ (I - BplusB) @ M_negsqrt @ c
