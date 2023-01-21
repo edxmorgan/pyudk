@@ -12,7 +12,7 @@ class Udk:
         r"""
             symbolically solves for A and b matrix for the udwadia kalaba theory."""
 
-        pass
+        return
 
     def ideal_Constraint_force(self, m, q, A, b):
         B = A @ si.linalg.fractional_matrix_power(m, -1 / 2)

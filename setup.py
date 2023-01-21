@@ -3,7 +3,7 @@ import io
 import os
 from setuptools import find_packages, setup
 
-VERSION = '0.0.1'
+VERSION = '0.0.3'
 
 
 def read(*paths, **kwargs):
@@ -29,7 +29,7 @@ def read_requirements(path):
 setup(
     name="pyUdk",
     version=VERSION,
-    description="compute Udwadia–Kalaba constraint forces of an "
+    description="Computes Udwadia–Kalaba constraint forces of an "
                 "equation of motion of a constrained mechanical system.",
     url="https://github.com/Eddy-Morgan/PyUdK",
     long_description=read("README.md"),
