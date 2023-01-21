@@ -3,7 +3,7 @@ import scipy as si
 import numpy as np
 
 
-class Udk:
+class UdK:
 
     def __int__(self):
         pass
