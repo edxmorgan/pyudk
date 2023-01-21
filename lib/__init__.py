@@ -3,4 +3,4 @@ equations of motion of a constrained mechanical system."""
 
 __version__ = '0.0.1'
 
-from .core import *
+from pyUdk.lib.pyUdK import *
