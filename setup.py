@@ -46,6 +46,7 @@ setup(
         "Operating System :: Unix",
         "Operating System :: MacOS :: MacOS X",
         "Operating System :: Microsoft :: Windows",
-        "License :: OSI Approved :: MIT License"
+        "License :: OSI Approved :: MIT License",
+        "Topic :: Scientific/Engineering"
     ]
 )
