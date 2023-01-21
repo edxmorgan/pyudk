@@ -3,6 +3,7 @@ import io
 import os
 from setuptools import find_packages, setup
 
+__VERSION__ = '0.0.1'
 
 def read(*paths, **kwargs):
     """Read the contents of a text file safely. >>> read("project_name", "VERSION")
@@ -26,7 +27,7 @@ def read_requirements(path):
 
 setup(
     name="pyUdk",
-    version=read("project_name", "VERSION"),
+    version=__VERSION__,
     description="compute Udwadia–Kalaba constraint forces of an "
                 "equation of motion of a constrained mechanical system.",
     url="https://github.com/Eddy-Morgan/PyUdK",
