@@ -1,1 +1,1 @@
-from pyUdk.src.pyUdK import *
+from pyUdK import *

@@ -3,7 +3,7 @@ import io
 import os
 from setuptools import find_packages, setup
 
-VERSION = '0.0.5'
+VERSION = '0.0.6'
 
 
 def read(*paths, **kwargs):
@@ -35,6 +35,8 @@ setup(
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
     author="Edward Morgan",
+    author_email='emorg31@lsu.edu',
+    license='MIT',
     packages=find_packages(exclude=["tests", ".github"]),
     install_requires=read_requirements("requirements.txt"),
     keywords=['python', 'pyUdK', 'Udwadia Kalaba', 'constraint', 'gaussian', 'equation of motion',
