@@ -9,9 +9,6 @@ Just run
 
     pip install pyUdK
 
-If you want to use YAML to store your translations, use
-
-    pip install pyUdK[YAML]
 
 ## Usage
 ### Basic usage
