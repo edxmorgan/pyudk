@@ -8,7 +8,7 @@ class UdK:
     def __int__(self):
         pass
 
-    def A_factorize(vec:sp.Matrix, coeffs:sp.Matrix):
+    def A_factorize(self,vec:sp.Matrix, coeffs:sp.Matrix):
         '''
         Factorize a vector into the product of a matrix and its coefficients. 
 
