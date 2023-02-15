@@ -8,11 +8,26 @@ class UdK:
     def __int__(self):
         pass
 
-    def Constraint_Parameters(self, f, *symbols, **flags):
-        r"""
-            symbolically solves for A and b matrix for the udwadia kalaba theory."""
+    def A_factorize(vec:sp.Matrix, coeffs:sp.Matrix):
+        '''
+        Factorize a vector into the product of a matrix and its coefficients. 
 
-        return
+        Parameters
+        ----------
+        - `vec` : column vector of constraint equations
+        - `q''` : column vector of generalized coordinate to factorize 
+
+        Return
+        ------
+        - `A` : vec = A@q''
+        '''
+        A = sp.zeros(len(vec),len(coeffs))
+        for i,v in enumerate(vec):
+            expr = sp.collect(sp.expand(v), syms=coeffs[:])
+            for j,c in enumerate(coeffs):
+                A[i,j] = expr.coeff(coeffs[j]) 
+        return A 
+
 
     def ideal_Constraint_force(self, m, q, A, b):
         B = A @ si.linalg.fractional_matrix_power(m, -1 / 2)
