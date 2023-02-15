@@ -8,7 +8,7 @@ class UdK:
     def __int__(self):
         pass
 
-    def A_factorize(self,vec:sp.Matrix, coeffs:sp.Matrix):
+    def A_b_Matrices(self,vec:sp.Matrix, coeffs:sp.Matrix):
         '''
         Factorize a vector into the product of a matrix and its coefficients. 
 
@@ -22,11 +22,14 @@ class UdK:
         - `A` : vec = A@q''
         '''
         A = sp.zeros(len(vec),len(coeffs))
+        b = sp.zeros(len(vec),1)
         for i,v in enumerate(vec):
             expr = sp.collect(sp.expand(v), syms=coeffs[:])
+            b[i] = expr
             for j,c in enumerate(coeffs):
-                A[i,j] = expr.coeff(coeffs[j]) 
-        return A 
+                A[i,j] = expr.coeff(coeffs[j])
+                b[i] = b[i] - (A[i,j]*coeffs[j])
+        return A,b  
 
 
     def ideal_Constraint_force(self, m, q, A, b):

@@ -3,7 +3,7 @@ import io
 import os
 from setuptools import find_packages, setup
 
-VERSION = '0.0.8'
+VERSION = '1.0.0'
 
 
 def read(*paths, **kwargs):
