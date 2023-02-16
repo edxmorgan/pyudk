@@ -37,7 +37,7 @@ setup(
     author="Edward Morgan",
     author_email='emorg31@lsu.edu',
     license='MIT',
-    packages=find_packages(include=['pyudk']),
+    packages=find_packages(include=['pyudk'],exclude=['tests']),
     tests_require=['pytest==4.4.1'],
     test_suite='tests',
     setup_requires=['pytest-runner'],
