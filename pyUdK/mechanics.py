@@ -4,7 +4,7 @@ import sympy as sp
 
 class Constraint:
 
-    def __int__(self):
+    def __init__(self):
         pass
 
     def test(self):
