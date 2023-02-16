@@ -1,4 +1,4 @@
-import pyudk
+from pyudk import Constraint
 
 def test_uke():
-    assert pyudk.Constraint().test() == True
+    assert Constraint().test() == True

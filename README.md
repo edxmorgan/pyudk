@@ -15,5 +15,5 @@ Just run
 
 The simplest, though not very useful usage would be
 
-    import Udk
-    Q = Udk.ideal_Constraint_force(m, q, A, b)
+    import pyudk
+    Q = Udk.Constraint().ideal_Constraint_force(m, q, A, b)

@@ -2,7 +2,7 @@ import scipy as si
 import numpy as np
 import sympy as sp
 
-class Constraint:
+class Constraint():
 
     def __init__(self):
         pass
