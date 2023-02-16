@@ -1,4 +1,4 @@
-# pyUdK
+# pyudk
 
 
 This library provides Udwadia Kalaba constrained parameters and force quantities for Python 3 out of the box. The usage is mostly based on numpy and sympy library.
@@ -7,7 +7,7 @@ This library provides Udwadia Kalaba constrained parameters and force quantities
 
 Just run
 
-    pip install pyUdK
+    pip install pyudk
 
 
 ## Usage

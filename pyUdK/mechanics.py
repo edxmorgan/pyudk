@@ -1,12 +1,14 @@
-import sympy as sp
 import scipy as si
 import numpy as np
+import sympy as sp
 
-
-class UdK:
+class Constraint:
 
     def __int__(self):
         pass
+
+    def test(self):
+        return True
 
     def A_b_Matrices(self,vec:sp.Matrix, coeffs:sp.Matrix):
         '''
@@ -14,7 +16,7 @@ class UdK:
 
         Parameters
         ----------
-        - `vec` : column vector of constraint equations
+        - `vec` : column vector of 2nd order constraint equations in the standard form
         - `q''` : column vector of generalized coordinate to factorize 
 
         Return
