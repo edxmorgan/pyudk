@@ -3,7 +3,7 @@ import io
 import os
 from setuptools import find_packages, setup
 
-VERSION = '1.0.0'
+VERSION = '1.0.1'
 
 
 def read(*paths, **kwargs):
@@ -37,7 +37,7 @@ setup(
     author="Edward Morgan",
     author_email='emorg31@lsu.edu',
     license='MIT',
-    packages=find_packages(exclude=["tests", ".github"]),
+    packages=find_packages(include=['pyUdk'], exclude=[".github"]),
     install_requires=read_requirements("requirements.txt"),
     keywords=['python', 'pyUdK', 'Udwadia Kalaba', 'constraint', 'gaussian', 'equation of motion',
               'constrained mechanical system'],
