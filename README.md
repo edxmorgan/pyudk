@@ -13,7 +13,7 @@ Just run
 ## Usage
 ### Basic usage
 
-The simplest, though not very useful usage would be
+The simplest usage would be
 
     import pyudk as udk
-    Qc = udk.Constraint().ideal_Constraint_force(m, q, A, b)
+    Qc = udk.ideal_Constraint_force(m, q, A, b)
