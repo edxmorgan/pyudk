@@ -5,8 +5,6 @@ This library provides Udwadia Kalaba constrained parameters and force quantities
 
 ## Installation
 
-Just run
-
     pip install pyudk
 
 
